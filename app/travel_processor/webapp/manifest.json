@@ -166,6 +166,15 @@
                       "name": "Inline",
                       "createAtEnd": true
                     }
+                  },
+                  "columns": {
+                    "myFlightNumber": {
+                      "id": "myFlightNumber",
+                      "header": "Flight Number (incl. Airline)",
+                      "template": "sap.fe.cap.travel.ext.MyFlightNumber",
+                      "properties": ["to_Carrier_AirlineID", "ConnectionID"],
+                      "importance": "High"
+                    }
                   }
                 }
               },
@@ -189,6 +198,11 @@
     "contentDensities": {
       "compact": true,
       "cozy": true
+    },
+    "extends": {
+      "extensions": {
+        "sap.ui.controllerExtensions": {}
+      }
     }
   },
   "sap.platform.abap": {

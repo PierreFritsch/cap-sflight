@@ -1,0 +1,13 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m">
+    <Text 
+        id="airlineAndConnectionId"
+        text="{
+            parts: [
+                {path: 'to_Carrier_AirlineID'},
+                {path: 'ConnectionID'}
+            ],
+            formatter: 'handler.concatenateAirlineConnection'
+        }" 
+        core:require="{handler: 'sap/fe/cap/travel/ext/MyFlightNumber'}"
+    />
+</core:FragmentDefinition>
