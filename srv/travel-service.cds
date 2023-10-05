@@ -8,6 +8,7 @@ service TravelService @(path:'/processor') {
     { grant: ['*'], to: 'processor'},
     { grant: ['*'], to: 'admin'}
   ])
+  @Capabilities.DeleteRestrictions: {Deletable: isDeletable}
   entity Travel as projection on my.Travel actions {
     action createTravelByTemplate() returns Travel;
     action rejectTravel();
