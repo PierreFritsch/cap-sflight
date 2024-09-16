@@ -126,6 +126,16 @@
               "controlConfiguration": {
                 "@com.sap.vocabularies.UI.v1.SelectionFields": {
                   "useSemanticDateRange": true
+                },
+                "@com.sap.vocabularies.UI.v1.LineItem": {
+                  "columns": {
+                    "myTotalPrice": {
+                      "id": "myTotalPrice",
+                      "header": "Total Price (Custom Column)",
+                      "template": "sap.fe.cap.travel.ext.MyTotalPrice",
+                      "properties": ["TotalPrice"]
+                    }
+                  }
                 }
               },
               "variantManagement": "Page",
